@@ -2,8 +2,6 @@
 // a simple, batteries-included command-line interface for managing
 // Postgres schema migrations stored in a local filesystem directory.
 //
-// Usage summary (see usage() for full text):
-//
 //	pgmigrate <command> [flags]
 //
 // Commands implemented by this binary:
@@ -46,9 +44,6 @@ func main() {
 	dsn := envOr("DATABASE_URL", "")
 	dir := envOr("MIGRATIONS_DIR", defaultDir)
 
-	// We branch on the first CLI argument to select a subcommand. Each
-	// subcommand creates its own FlagSet so flags are scoped to that
-	// command (e.g. `pgmigrate up --steps 1`).
 	switch os.Args[1] {
 	case "create":
 		fs := flag.NewFlagSet("create", flag.ExitOnError)
