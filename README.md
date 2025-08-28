@@ -5,12 +5,20 @@ A lightweight, repo-agnostic CLI for managing PostgreSQL schema migrations power
 [![Go Reference](https://pkg.go.dev/badge/github.com/kirinyoku/pgmigrate.svg)](https://pkg.go.dev/github.com/kirinyoku/pgmigrate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+## Table of Contents
+- [Install](#install)
+- [Quick start](#quick-start)
+- [Commands](#commands)
+- [Configuration](#configuration)
+- [Migration file format](#migration-file-format)
+- [Postgres best practices](#postgres-best-practices)
+- [Dirty state](#dirty-state)
+- [License](#license)
 
 ## Install
 
 ```bash
-go install github.com/kirinyoku/pgmigrate
+go install github.com/kirinyoku/pgmigrate@latest
 ```
 
 ## Quick start
@@ -155,3 +163,7 @@ Steps:
 3. Re-run `pgmigrate up`.
 
 Always test migrations on staging or a copy of production data before production rollout.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
