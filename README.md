@@ -2,6 +2,11 @@
 
 A lightweight, repo-agnostic CLI for managing PostgreSQL schema migrations powered by [golang-migrate](https://github.com/golang-migrate/migrate). Install once with `go install` and reuse across projects. Migrations live in your project folder (no embed required).
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/kirinyoku/pgmigrate.svg)](https://pkg.go.dev/github.com/kirinyoku/pgmigrate)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
 ## Install
 
 ```bash
